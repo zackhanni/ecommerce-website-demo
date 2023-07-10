@@ -56,6 +56,7 @@ button:hover {
     background-color: #3a3833;
 }
 
+/* navbar should have more width like in demo. background color shouldnt have to be in .navbar below */
 .navbar {
     font-size: 16px;
     background-color: white;
@@ -84,12 +85,58 @@ button:hover {
     transition: 0.3s ease;
 }
 
+/* Mobile Nav */
+.navbar-expand-lg .navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+#bar {
+    color: black;
+    font-size: 1.5rem;
+    padding: 7px;
+    cursor: pointer;
+    /* font-weight: 500; */
+}
+
+#bar:hover, 
+#bar:active {
+    color: white;
+}
+
+@media only screen and (max-width: 991px) {
+    body > nav > div > button:hover,
+    body > nav > div > button:focus {
+        background-color: coral;
+    }
+
+    body > nav > div > button:hover #bar,
+    body > nav > div > button:focus #bar {
+        color: white;
+    }
+
+    #navbarSupportedContent > ul {
+        margin: 1rem;
+        justify-content: flex-end;
+        align-items: flex-end;
+        text-align: right;
+    }
+
+    #navbarSupportedContent > ul > li:nth-child(n) > a{
+        padding: 10px 0;
+    }
+
+    #navbarSupportedContent > ul > li:nth-child(n) > i {
+        padding: 10px 10px;
+    }
+}
+
 #home {
     background-image: url("img/home-back.png");
     width: 100%;
     height: 100vh;
     background-size: cover;
-    background-position: center;
+    background-position: top 60px center;
     display: flex;
     flex-direction: column;
     justify-content: center;
