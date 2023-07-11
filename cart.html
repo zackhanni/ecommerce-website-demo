@@ -25,8 +25,90 @@
     </script>
     <!--end of Navigation bar-->
 
+    <section id="cart" class="container my-5 py-5">
+            <h1 class="font-weight-bold">Shopping Cart</h1>
+            <hr>
+    </section>
 
+    <section id="cart-container" class="container my-5">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Total</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#"><i class="fa-solid fa-trash-can"></i></a></td>
+                    <td><img src="img/shoes/1.jpg" alt=""></td>
+                    <td><h5>Running Shoes (black)</h5></td>
+                    <td><h5>$69.99</h5></td>
+                    <td><input class="w-25 pl-1" type="number" value="1"></td>
+                    <td><h5>$69.99</h5></td>
+                </tr>
 
+                <tr>
+                    <td><a href="#"><i class="fa-solid fa-trash-can"></i></a></td>
+                    <td><img src="img/features/3.jpg" alt=""></td>
+                    <td><h5>Travel Backpack</h5></td>
+                    <td><h5>$49.99</h5></td>
+                    <td><input class="w-25 pl-1" type="number" value="2"></td>
+                    <td><h5>$99.98</h5></td>
+                </tr>
+
+                <tr>
+                    <td><a href="#"><i class="fa-solid fa-trash-can"></i></a></td>
+                    <td><img src="img/features/1.jpg" alt=""></td>
+                    <td><h5>White Shoes</h5></td>
+                    <td><h5>$55.99</h5></td>
+                    <td><input class="w-25 pl-1" type="number" value="1"></td>
+                    <td><h5>$55.99</h5></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="cart-bottom" class="container">
+        <div class="row">
+            <div class="coupon col-lg-6 col-md-6 col-12 mb-4">
+                <div>
+                    <h5>COUPON CODE</h5>
+                    <p>Enter coupon code</p>
+                    <input type="text" placeholder="Coupon Code">
+                    <button>APPLY COUPON</button>
+                </div>
+            </div>
+            <div class="total col-lg-6 col-md-6 col-12">
+                <div>
+                    <h5>Cart Total</h5>
+                        <div class="d-flex justify-content-between">
+                            <h6>Subtotal</h6>
+                            <p>$1234.56</p>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <h6>Tax</h6>
+                            <p>$12.34</p>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <h6>Shipping</h6>
+                            <p>FREE SHIPPING</p>
+                        </div>
+                        <hr>
+                        <div class="d-flex justify-content-between">
+                            <h6>Grand Total</h6>
+                            <p>$1234.56</p>
+                        </div>
+
+                    <button class="ml-auto">Proceed to Payment</button>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <!--Footer-->
